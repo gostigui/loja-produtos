@@ -8,8 +8,20 @@ function App() {
         <header>
           <img src={logo} className="App-logo" alt="logo" />
           <h1>loja Gosti</h1>
-        </header>  
-      
+        </header>
+        <section>
+          <div className="produto">
+            <div className="imagem"></div>
+            <div className="titulo">teste</div>
+            <div className="acoes">
+              <span className="preco"> R$10,00 </span>
+              <button>
+                ver detalhes
+              </button>
+            </div>
+          </div>
+        </section>
+
       </div>
     </>
   );
