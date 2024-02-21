@@ -5,10 +5,10 @@ function App() {
   return (
     <>
       <div className="App">
-        <nav>
+        <header>
           <img src={logo} className="App-logo" alt="logo" />
           <h1>loja Gosti</h1>
-        </nav>  
+        </header>  
       
       </div>
     </>
