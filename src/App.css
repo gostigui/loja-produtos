@@ -11,7 +11,7 @@ header {
 }
 
 .produto .imagem img {
-  width: 150px;
+  width: 130px;
 }
 
 .produto .imagem {
@@ -23,26 +23,43 @@ header {
   text-align: center;
 }
 
-.produto .preco {}
+.produto .preco {
+  text-align: center;
+}
 
 .produtos {
   display: flex;
   justify-content: space-evenly;
   flex-flow: row wrap;
+
 }
 
 .produtos .produto {
   box-sizing: border-box;
   min-width: 16.6%;
   padding: 1em;
+
 }
 
 .produto .acoes {
   display: flex;
   flex-direction: row;
+
 }
 
 .produto .acoes div {
   flex-grow: 1;
   flex-basis: 50%;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.preco {
+  display: block;
+
+}
+
+button {
+  display: block;
+
 }
