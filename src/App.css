@@ -11,7 +11,8 @@ header {
 }
 
 .produto .imagem img {
-  width: 130px;
+  max-height: 10em;
+  max-width: 100%;
 }
 
 .produto .imagem {
