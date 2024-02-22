@@ -39,7 +39,7 @@ header {
 
 .produtos .produto {
   box-sizing: border-box;
-  min-width: 16.6%;
+  min-width: calc(100% / 6 - 2em);
   margin: 1em;
   border-radius: 1em;
   background-color: #fff;
@@ -72,11 +72,7 @@ header {
 
 }
 
-button {
-  display: block;
-
-}
-
 .produto button {
   display: block;
+  border: 1px solid #C04D01;
 }
