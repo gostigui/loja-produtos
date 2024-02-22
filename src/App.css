@@ -17,7 +17,6 @@ header {
 
 .produto .imagem {
   text-align: center;
-  overflow: hidden;
 }
 
 .produto .titulo {
@@ -44,6 +43,7 @@ header {
   margin: 1em;
   border-radius: 1em;
   background-color: #fff;
+  overflow: hidden;
 
 }
 
