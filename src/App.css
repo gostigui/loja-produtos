@@ -9,3 +9,40 @@ header {
   pointer-events: none;
   border-radius: 50%;
 }
+
+.produto .imagem img {
+  width: 150px;
+}
+
+.produto .imagem {
+  text-align: center;
+}
+
+.produto .titulo {
+  font-weight: bold;
+  text-align: center;
+}
+
+.produto .preco {}
+
+.produtos {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+}
+
+.produtos .produto {
+  box-sizing: border-box;
+  min-width: 16.6%;
+  padding: 1em;
+}
+
+.produto .acoes {
+  display: flex;
+  flex-direction: row;
+}
+
+.produto .acoes div {
+  flex-grow: 1;
+  flex-basis: 50%;
+}

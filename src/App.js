@@ -1,7 +1,16 @@
 import logo from './logo.jpg';
+import fralda from './assets/fralda.webp';
 import './App.css';
 
 function App() {
+  const produtos = [
+    { imagem: fralda, titulo: "Fralda", preco: 10.99 },
+    { imagem: fralda, titulo: "Fralda", preco: 10.99 },
+    { imagem: fralda, titulo: "Fralda", preco: 10.99 },
+    { imagem: fralda, titulo: "Fralda", preco: 10.99 },
+    { imagem: fralda, titulo: "Fralda", preco: 10.99 },
+    { imagem: fralda, titulo: "Fralda", preco: 10.99 },
+  ];
   return (
     <>
       <div className="App">
@@ -10,15 +19,33 @@ function App() {
           <h1>loja Gosti</h1>
         </header>
         <section>
-          <div className="produto">
-            <div className="imagem"></div>
-            <div className="titulo">teste</div>
-            <div className="acoes">
-              <span className="preco"> R$10,00 </span>
-              <button>
-                ver detalhes
-              </button>
-            </div>
+          <div className="produtos">
+
+            {produtos.map(function (produto) {
+              return (
+                <div className="produto">
+                  <div className="imagem">
+                    <img src={produto.imagem} alt="imagem de fralda" />
+                  </div>
+                  <div className="titulo">{produto.titulo}</div>
+                  <div className="acoes">
+                    <div>
+                      <span className="preco"> R$ {produto.preco} </span>
+                    </div>
+                    <div>
+                      <button>
+                        ver detalhes
+
+                      </button>
+                    </div>
+
+                  </div>
+                </div>
+
+              )
+            })}
+
+
           </div>
         </section>
 
