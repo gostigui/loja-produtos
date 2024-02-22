@@ -1,7 +1,20 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 header {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: 0 0 auto;
+}
+
+section {
+  background-color: #1A5976;
+  flex: 1 1 auto;
+  overflow-y: auto;
 }
 
 .App-logo {
@@ -33,7 +46,7 @@ header {
   display: flex;
   justify-content: space-evenly;
   flex-flow: row wrap;
-  background-color: #1A5976;
+
 
 }
 
@@ -74,5 +87,14 @@ header {
 
 .produto button {
   display: block;
-  border: 1px solid #C04D01;
+  width: 100%;
+  padding: 0.5em;
+  border: 0;
+
+}
+
+.produto button:hover {
+  background-color: #c2ab00;
+  cursor: pointer;
+
 }
