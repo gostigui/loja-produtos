@@ -1,7 +1,8 @@
 import React from "react"
-import "./ProdutoComponent.css" 
+import "./ProdutoComponent.css"
+import { Link } from "react-router-dom";
 
-function ProdutoComponent({ dados }) {
+function ProdutoComponent({ dados,id }) {
     return (
         <div className="produto">
             <div className="imagem">
@@ -13,7 +14,7 @@ function ProdutoComponent({ dados }) {
                     <span className="preco"> R$ {dados.preco.toFixed(2)} </span>
                 </div>
                 <div>
-                    <button> ver detalhes </button>
+                    <Link className="navegar" to={"/produtos/"+id}> ver detalhes </Link>
                 </div>
 
             </div>
