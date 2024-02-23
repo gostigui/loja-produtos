@@ -12,6 +12,7 @@ import shampoo from './assets/shampoo.webp';
 import repelente from './assets/repelente.webp';
 import mem from './assets/mem.webp';
 import './App.css';
+import ProdutoComponent from './components/ProdutoComponent';
 
 function App() {
   const produtos = [
@@ -37,29 +38,11 @@ function App() {
         </header>
         <section>
           <div className="produtos">
-
             {produtos.map(function (produto) {
               return (
-                <div className="produto">
-                  <div className="imagem">
-                    <img src={produto.imagem} alt="imagem de fralda" />
-                  </div>
-                  <div className="titulo">{produto.titulo}</div>
-                  <div className="acoes">
-                    <div>
-                      <span className="preco"> R$ {produto.preco.toFixed(2)} </span>
-                    </div>
-                    <div>
-                      <button> ver detalhes </button>
-                    </div>
-
-                  </div>
-                </div>
-
+                <ProdutoComponent dados={produto} />
               )
             })}
-
-
           </div>
         </section>
 
