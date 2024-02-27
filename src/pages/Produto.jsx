@@ -17,10 +17,8 @@ function Produto() {
             </div>
             <div className="preco">R${produto.preco.toFixed(2)}</div>
         </div>
-    </section>)
+    </section>);
 
 }
 
-
-
-export default Produto
+export default Produto;

@@ -2,7 +2,7 @@ import React from "react"
 import "./ProdutoComponent.css"
 import { Link } from "react-router-dom";
 
-function ProdutoComponent({ dados,id }) {
+function ProdutoComponent({ dados, id }) {
     return (
         <div className="produto">
             <div className="imagem">
@@ -14,7 +14,7 @@ function ProdutoComponent({ dados,id }) {
                     <span className="preco"> R$ {dados.preco.toFixed(2)} </span>
                 </div>
                 <div>
-                    <Link className="navegar" to={"/produtos/"+id}> ver detalhes </Link>
+                    <Link className="navegar" to={"/produtos/" + id}> ver detalhes </Link>
                 </div>
 
             </div>

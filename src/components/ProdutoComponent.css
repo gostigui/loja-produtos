@@ -28,7 +28,7 @@
 
 .produtos .produto {
     box-sizing: border-box;
-    min-width: calc(100% / 6 - 2em);
+    min-width: calc(100% / 6 - 2em); 
     margin: 1em;
     border-radius: 1em;
     background-color: #fff;
@@ -70,6 +70,7 @@
     color: black;
     text-decoration: none;
     border: 0.3px solid black;
+    
 
 }
 
