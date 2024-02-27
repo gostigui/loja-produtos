@@ -1,5 +1,5 @@
 .produto .imagem img {
-    max-height: 10em;
+    max-height: 9em;
     max-width: 100%;
 }
 
@@ -11,10 +11,12 @@
     font-weight: bold;
     text-align: center;
     margin-bottom: 0.5em;
+
 }
 
 .produto .preco {
     text-align: center;
+
 }
 
 .produtos {
@@ -31,7 +33,7 @@
     border-radius: 1em;
     background-color: #fff;
     overflow: hidden;
-
+    border: 0.3px solid black;
 }
 
 .produto .acoes {
@@ -39,7 +41,7 @@
     flex-direction: row;
     background-color: #C04D01;
     align-items: stretch;
-
+ 
 }
 
 .produto .acoes div {
@@ -67,6 +69,7 @@
     background-color: white;
     color: black;
     text-decoration: none;
+    border: 0.3px solid black;
 
 }
 

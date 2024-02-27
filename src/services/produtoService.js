@@ -9,7 +9,7 @@ import desodorante from '../assets/desodorante.webp';
 import escovaDentes from '../assets/escovaDentes.webp';
 import shampoo from '../assets/shampoo.webp';
 import repelente from '../assets/repelente.webp';
-import pepsiBlack from '../assets/repelente.webp';
+import pepsiBlack from '../assets/pepsiBlack.jpg';
 import protetorSolar from '../assets/protetorSolar.jpg';
 import pente from '../assets/pente.jpg';
 import doritos from '../assets/doritos.jpg';
@@ -32,16 +32,16 @@ function ProdutoService() {
         { imagem: shampoo, titulo: "Shampoo", preco: 22.99 },
         { imagem: mem, titulo: "M&M", preco: 4.99 },
         { imagem: pepsiBlack, titulo: "Pepsi Black", preco: 4.99 },
-        { imagem: protetorSolar, titulo: "Protetor Solar", preco: 4.99 },
-        { imagem: pente, titulo: "Pente", preco: 4.99 },
-        { imagem: doritos, titulo: "Doritos", preco: 4.99 },
-        { imagem: cafe, titulo: "Café", preco: 4.99 },
-        { imagem: manteiga, titulo: "Manteiga", preco: 4.99 },
+        { imagem: protetorSolar, titulo: "Protetor Solar", preco: 11.99 },
+        { imagem: pente, titulo: "Pente", preco: 6.99 },
+        { imagem: doritos, titulo: "Doritos", preco: 12.99 },
+        { imagem: cafe, titulo: "Café", preco: 9.99 },
+        { imagem: manteiga, titulo: "Manteiga", preco: 7.99 },
     ];
-    function get(id){
+    function get(id) {
         return produtos[id]
     };
-    return { produtos , get}
+    return { produtos, get }
 }
 
 export default ProdutoService
