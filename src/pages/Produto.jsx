@@ -16,6 +16,7 @@ function Produto() {
                 <img src={produto.imagem} alt={produto.titulo} />
             </div>
             <div className="preco">R${produto.preco.toFixed(2)}</div>
+            <button>comprar</button>
         </div>
     </section>);
 
